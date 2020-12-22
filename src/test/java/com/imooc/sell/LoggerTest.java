@@ -1,13 +1,30 @@
-package imooc.sell;
-//
-//@RunWith(SpringRunner.class)
-//@SpringBootTest
-//public class LoggerTest {
-//
-//    private final Logger
-//
-//    @Test
-//    public void test1(){
-//
-//    }
-//}
+package com.imooc.sell;
+
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.junit.runner.RunWith;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@Slf4j
+public class LoggerTest {
+
+//    private final Logger logger = LoggerFactory.getLogger(LoggerTest.class);
+
+
+    @Test
+    public void test1(){
+        String name = "wdd";
+        log.info("info");
+//        logger.info("name:{}",name);
+//        logger.info("info..");
+
+//        log.debug("debug...");
+//        log.info("info...");
+//        log.error("error...");
+    }
+}
